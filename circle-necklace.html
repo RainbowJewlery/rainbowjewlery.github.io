@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainbowJewlery</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .navitem {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .navitem-active {
+            background-color: yellow;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .product-name {
+            text-align: left;
+        }
+
+        .splide__slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .deal {
+            color: red;
+        }
+        .price-deal {
+            text-decoration: line-through;
+        }
+    </style>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+          new Splide( '#image-carousel' ).mount();
+        } );
+      </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="navitem" href="index.html">Home</a>
+        <a class="navitem-active" href="shop.html">Shop</a>
+    </div>
+    <br>
+    <br>
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="images/product-img/circle-necklace/IMG_0615.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="images/product-img/circle-necklace/IMG_0616.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="images/product-img/circle-necklace/IMG_0617.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <h1>Circle Necklace</h1>
+    <h2>~~$2.00~~ $0.50 [-76.2%]</h2>
+    <p class="deal">First 3 buyers can get this product for 76.2% off!</p>
+    <button disabled>Buy</button>
+    <button onclick="window.location.replace('find.html')">Find this product</button>
+</body>
+
+</html>
