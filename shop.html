@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainbowJewlery</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .navitem {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .navitem-active {
+            background-color: yellow;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.products {
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a class="navitem" href="index.html">Home</a>
+    <a class="navitem-active" href="shop.html">Shop</a>
+</div>
+<h1>Products</h1>
+<br>
+<div class="card">
+    <img src="images/product-img/circle-necklace/IMG_0615.jpg" alt="Circle necklace" style="width:100%">
+    <h1>Circle Necklace</h1>
+    <p class="price">$2.00</p>
+    <p>Round, pink necklace made of quality paper, personalized design, perfect for any outfit.</p>
+    <p><button onclick="window.location.replace('circle-necklace.html')">Add to Cart</button></p>
+</body>
+
+</html>
